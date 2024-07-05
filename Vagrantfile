@@ -1,8 +1,4 @@
-To create a more organized Vagrantfile with separate configuration blocks for each server, you can define each server individually within the Vagrant.configure block. This approach allows for greater clarity and easier customization of each server's settings. Here's how you can do it:
-
-    ruby
-    
-    Vagrant.configure("2") do |config|
+Vagrant.configure("2") do |config|
       config.vm.define "control" do |control|
         control.vm.box = "generic/ubuntu1804"
         control.vm.hostname = "control"
